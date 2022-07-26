@@ -1,4 +1,5 @@
 using ApiPruebaTecnica.Business.Interfaces;
+using ApiPruebaTecnica.DTO;
 using ApiPruebaTecnica.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +26,7 @@ namespace ApiPruebaTecnica.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet]
-        public async Task<List<VentaModel>> GetAll()
+        public async Task<List<VentaDto>> GetAll()
         {
             try
             {
@@ -47,7 +48,7 @@ namespace ApiPruebaTecnica.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost]
-        public ActionResult<bool> Post(VentaModel venta)
+        public ActionResult<bool> Post(VentaDto venta)
         {
             return _bussines.Insert(venta);
         }

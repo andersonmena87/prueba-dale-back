@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ApiPruebaTecnica.Entities
 {
-    [Table("detalle_venta")]
+    [Table("detalleventa")]
     public class DetalleVentaEntity
     {
         [Key]

@@ -152,7 +152,7 @@
             <response code="200">Operación finalizada exitosamente</response>
             <response code="500">Se presentó un error interno al consultar los ventas</response>
         </member>
-        <member name="M:ApiPruebaTecnica.Controllers.VentaController.Post(ApiPruebaTecnica.Models.VentaModel)">
+        <member name="M:ApiPruebaTecnica.Controllers.VentaController.Post(ApiPruebaTecnica.DTO.VentaDto)">
             <summary>
             Adiciona un nuevo venta
             </summary>
