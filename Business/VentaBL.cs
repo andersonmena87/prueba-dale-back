@@ -19,20 +19,20 @@ namespace ApiPruebaTecnica.Business
         public async Task<List<VentaDto>> GetAll()
         {
             List<VentaDto> ventas = await (from venta in _context.Venta
+                                             join detalleVenta in _context.DetalleVenta on venta.IdVenta equals detalleVenta.IdVenta
                                              join cliente in _context.Cliente on venta.IdCliente equals cliente.IdCliente
                                              join usuario in _context.Usuario on venta.IdUsuario equals usuario.IdUsuario
                                              join rol in _context.Rol on usuario.IdUsuario equals rol.IdRol
+                                             join producto in _context.Producto on detalleVenta.IdProducto equals producto.IdProducto
                                              select new VentaDto
                                              {
                           IdVenta = venta.IdVenta,
                           IdCliente = venta.IdCliente,
                           IdUsuario = venta.IdUsuario,
-                          Usuario = new UsuarioModel() { 
-                            IdUsuario = usuario.IdUsuario,
-                            IdRol = usuario.IdRol,
-                            Rol = rol
-                          },
-                          Cliente = cliente
+                          Usuario = usuario,
+                          Producto = producto,
+                          Cliente = cliente,
+                          DetalleVenta = detalleVenta
                       }
                       ).ToListAsync();
 
@@ -56,7 +56,9 @@ namespace ApiPruebaTecnica.Business
             DetalleVentaModel detalleVenta = new DetalleVentaModel
             {
                 IdVenta = venta.IdVenta,
-                IdProducto = _venta.DetalleVenta.IdProducto
+                IdProducto = _venta.DetalleVenta.IdProducto,
+                Cantidad = _venta.DetalleVenta.Cantidad,
+                Total = _venta.DetalleVenta.Total
             };
 
             _context.Add(detalleVenta);

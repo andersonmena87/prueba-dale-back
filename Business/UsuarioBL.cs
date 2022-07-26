@@ -16,7 +16,6 @@ namespace ApiPruebaTecnica.Business
         public async Task<List<UsuarioModel>> GetAll()
         {
             List<UsuarioModel> usuarios = await (from usuario in _context.Usuario
-                                                 join rol in _context.Rol on usuario.IdRol equals rol.IdRol 
                       select new UsuarioModel 
                       {
                           IdUsuario = usuario.IdUsuario,
@@ -24,9 +23,7 @@ namespace ApiPruebaTecnica.Business
                           Cedula = usuario.Cedula,
                           Telefono = usuario.Telefono,
                           Username = usuario.Username,
-                          Password = usuario.Password,
-                          IdRol = usuario.IdRol,
-                          Rol = rol
+                          Password = usuario.Password
                       }
                       ).ToListAsync();
 

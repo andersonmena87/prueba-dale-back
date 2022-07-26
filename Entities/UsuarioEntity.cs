@@ -26,8 +26,5 @@ namespace ApiPruebaTecnica.Entities
         [Column("password")]
         public string Password { get; set; }
 
-        [Column("idrol")]
-        public int IdRol { get; set; }
-
     }
 }

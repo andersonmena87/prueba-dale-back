@@ -17,5 +17,7 @@ namespace ApiPruebaTecnica.DTO
         public virtual UsuarioModel Usuario { get; set; }
 
         public virtual DetalleVentaModel DetalleVenta { get; set; }
+
+        public virtual ProductoModel Producto { get; set; }
     }
 }

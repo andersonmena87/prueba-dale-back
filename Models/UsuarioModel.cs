@@ -16,9 +16,5 @@ namespace ApiPruebaTecnica.Models
         public string Username { get; set; }
 
         public string Password { get; set; }
-
-        public int IdRol { get; set; }
-
-        public virtual RolModel Rol { get; set; }
     }
 }
