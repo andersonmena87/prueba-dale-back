@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiPruebaTecnica</name>
+    </assembly>
+    <members>
+        <member name="M:ApiPruebaTecnica.Controllers.ClienteController.GetAll">
+            <summary>
+             Obtiene el listado de clientes
+            </summary>
+            <returns>Listado de clientes</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los clientes</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ClienteController.Post(ApiPruebaTecnica.Models.ClienteModel)">
+            <summary>
+            Adiciona un nuevo cliente
+            </summary>
+            <param name="cliente">Objeto con la información del cliente que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un cliente</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ClienteController.Put(ApiPruebaTecnica.Models.ClienteModel)">
+            <summary>
+            Actualiza el la información de un cliente.
+            </summary>
+            <param name="cliente">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un cliente</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ClienteController.Delete(System.Int32)">
+            <summary>
+            Elimina cliente por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un cliente</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ProductoController.GetAll">
+            <summary>
+             Obtiene el listado de productos
+            </summary>
+            <returns>Listado de productos</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los productos</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ProductoController.Post(ApiPruebaTecnica.Models.ProductoModel)">
+            <summary>
+            Adiciona un nuevo producto
+            </summary>
+            <param name="producto">Objeto con la información del producto que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un producto</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ProductoController.Put(ApiPruebaTecnica.Models.ProductoModel)">
+            <summary>
+            Actualiza el la información de un producto.
+            </summary>
+            <param name="producto">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un producto</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.ProductoController.Delete(System.Int32)">
+            <summary>
+            Elimina producto por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un producto</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.RolController.GetAll">
+            <summary>
+             Obtiene el listado de roles
+            </summary>
+            <returns>Listado de roles</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los roles</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.RolController.Post(ApiPruebaTecnica.Models.RolModel)">
+            <summary>
+            Adiciona un nuevo rol
+            </summary>
+            <param name="rol">Objeto con la información del rol que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un rol</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.RolController.Put(ApiPruebaTecnica.Models.RolModel)">
+            <summary>
+            Actualiza el la información de un rol.
+            </summary>
+            <param name="rol">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un rol</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.RolController.Delete(System.Int32)">
+            <summary>
+            Elimina rol por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un rol</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.GetAll">
+            <summary>
+             Obtiene el listado de usuarios
+            </summary>
+            <returns>Listado de usuarios</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los usuarios</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Post(ApiPruebaTecnica.Models.UsuarioModel)">
+            <summary>
+            Adiciona un nuevo usuario
+            </summary>
+            <param name="usuario">Objeto con la información del usuario que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un usuario</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Put(ApiPruebaTecnica.Models.UsuarioModel)">
+            <summary>
+            Actualiza el la información de un usuario.
+            </summary>
+            <param name="usuario">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un usuario</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Elimina usuario por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un usuario</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.VentaController.GetAll">
+            <summary>
+             Obtiene el listado de ventas
+            </summary>
+            <returns>Listado de ventas</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los ventas</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.VentaController.Post(ApiPruebaTecnica.Models.VentaModel)">
+            <summary>
+            Adiciona un nuevo venta
+            </summary>
+            <param name="venta">Objeto con la información del venta que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un venta</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.VentaController.Put(ApiPruebaTecnica.Models.VentaModel)">
+            <summary>
+            Actualiza el la información de un venta.
+            </summary>
+            <param name="venta">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un venta</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.VentaController.Delete(System.Int32)">
+            <summary>
+            Elimina venta por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un venta</response>        
+        </member>
+    </members>
+</doc>
