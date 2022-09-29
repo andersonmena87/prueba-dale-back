@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\prueba_dale\\prueba-tecnica-api\\ApiPruebaTecnica.csproj": {}
+    "E:\\Desarrollos\\prueba_dale\\prueba-dale-back\\ApiPruebaTecnica.csproj": {}
   },
   "projects": {
-    "E:\\prueba_dale\\prueba-tecnica-api\\ApiPruebaTecnica.csproj": {
+    "E:\\Desarrollos\\prueba_dale\\prueba-dale-back\\ApiPruebaTecnica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\prueba_dale\\prueba-tecnica-api\\ApiPruebaTecnica.csproj",
+        "projectUniqueName": "E:\\Desarrollos\\prueba_dale\\prueba-dale-back\\ApiPruebaTecnica.csproj",
         "projectName": "ApiPruebaTecnica",
-        "projectPath": "E:\\prueba_dale\\prueba-tecnica-api\\ApiPruebaTecnica.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\prueba_dale\\prueba-tecnica-api\\obj\\",
+        "projectPath": "E:\\Desarrollos\\prueba_dale\\prueba-dale-back\\ApiPruebaTecnica.csproj",
+        "packagesPath": "C:\\Users\\Anderson\\.nuget\\packages\\",
+        "outputPath": "E:\\Desarrollos\\prueba_dale\\prueba-dale-back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anderson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
